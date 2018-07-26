@@ -1,3 +1,13 @@
 <%= @doctor.name %>
 <%= @doctor.department %>
+
+<ul>
+  <% @doctor.appointments.each do |doc| %>
+    <li>
+      <%= link_to doc.name, doctor_path(doc) %>
+      <%= doc.patient_count %>
+    </li>
+  <% end %>
+</ul>
+
 <%= link_to @doctor.patient.name, @song.artist %>
