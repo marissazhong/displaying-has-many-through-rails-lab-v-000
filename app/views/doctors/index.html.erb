@@ -3,7 +3,7 @@
 <ul>
   <% @doctors.each do |doc| %>
     <li>
-      <a href="<%= doctor_path(doc)%>"><%= doc.name %></a>
+      <%= link_to doc.name, doctor_path(doc) %></a>
     </li>
   <% end %>
 </ul>
