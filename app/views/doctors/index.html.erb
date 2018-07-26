@@ -1,0 +1,9 @@
+<h1>Doctors</h1>
+
+<ul>
+  <% @doctors.each do |doctor| %>
+    <li>
+      <a href="<%= song_path(c)%>"><%= c.artist_name %> - <%= c.title %></a>
+    </li>
+  <% end %>
+</ul>
