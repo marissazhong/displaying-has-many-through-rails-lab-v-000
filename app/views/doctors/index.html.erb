@@ -1,9 +1,9 @@
 <h1>Doctors</h1>
 
 <ul>
-  <% @doctors.each do |doctor| %>
+  <% @doctors.each do |doc| %>
     <li>
-      <a href="<%= song_path(c)%>"><%= c.artist_name %> - <%= c.title %></a>
+      <a href="<%= doctor_path(doc)%>"><%= doc.name %></a>
     </li>
   <% end %>
 </ul>
