@@ -4,4 +4,8 @@ class DoctorsController < ApplicationController
     @doctors = Doctor.all
   end
 
+  def show
+
+  end
+
 end
